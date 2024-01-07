@@ -66,7 +66,7 @@ m=-2 #providing a completely new slope for train and update
 b=-200
 z=m*x
 z=z+b
-for i in range(300):
+for i in range(600):
   if i%10==0:
     print(cost(z))
   m,b=update(m,b,0.000001,0.001) #updates gradients and biases
@@ -77,6 +77,6 @@ print("************************************************")
 print(" ")
 print("Final Model Predicted Line Stats:")
 print("Slope:" , m , " ;Y intercept" , b)
-
+print("@@@")
 plt.plot(x,z,color='green')
 plt.scatter(x,y)
